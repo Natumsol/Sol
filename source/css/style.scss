@@ -1,0 +1,81 @@
+@import "./_normalize.scss";
+@import "./_variables.scss";
+
+body {
+    background: $bg-color;
+    font-family: Open Sans;
+    font-size: 16px;
+    margin: 0;
+
+    #container {
+        width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 0 80px;
+
+        #sidebar {
+            color: $nav-text-color;
+            padding: 114px 40px 40px 0;
+            float: left;
+            width: 328px;
+            font-weight: 300;
+
+            .name {
+                font-size: 2rem;
+                color: $nav-author-color;
+                font-weight: 300;
+                margin-bottom: 24px;
+            }
+
+            .description {
+                font-size: .9rem;
+                font-weight: 300;
+                line-height: 1.5rem;
+                margin: 24px 0;
+            }
+
+            .divider {
+                height: 1px;
+                background: $nav-divider-color;
+            }
+
+            .nav, .sn {
+                padding: 0;
+
+                li {
+                    list-style: none;
+                    line-height: 2rem;
+                    font-size: .9rem;
+                    display: block;
+                    a{
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .divider-l {
+                width: 135px;
+            }
+
+            .divider-m {
+                width: 43px;
+            }
+
+            .divider-s {
+                width: 16px;
+            }
+        }
+
+        #main {
+            padding-top: 12px;
+            padding-bottom: 24px;
+            float: left;
+
+            article {
+                max-width: 800px;
+            }
+        }
+    }
+}
